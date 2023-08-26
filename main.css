@@ -1,0 +1,412 @@
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(rgb(191, 210, 85) 0%, rgb(142, 185, 42) 45%, rgb(114, 170, 0) 100%);
+  align-items: center;
+  padding: 2px 0;
+  color: #f9f9f9;
+  z-index: 11;
+}
+.navbar .container .menu {
+  display: flex;
+  align-items: center;
+}
+.navbar .container .menu .home-btn {
+  padding: 5px 5px;
+  margin: 0;
+}
+.navbar .container .menu .home-btn img {
+  height: 17px;
+  width: 11.37px;
+}
+.navbar .container .menu .search {
+  display: flex;
+}
+.navbar .container .menu .search input {
+  padding: 7px;
+}
+.navbar .container .menu .search .search-btn {
+  margin: 0;
+  background-color: rgb(0, 140, 186);
+  padding: 8px 20px;
+  border: none;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 14px;
+}
+.navbar .container .menu button {
+  background-color: transparent;
+  border: none;
+  color: rgb(255, 255, 255);
+}
+
+.main {
+  display: flex;
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  padding: 0 15px;
+  font-size: 14px;
+}
+.main img {
+  height: 17px;
+  background: transparent;
+  border: none;
+}
+.main .nearest,
+.main .lottery {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.drop-down {
+  position: relative;
+  display: inline-block;
+  padding: 15px 0;
+}
+.drop-down .content {
+  display: none;
+  position: absolute;
+  top: 48px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  min-height: 50px;
+  z-index: 1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.drop-down:hover .content,
+button .content {
+  display: block;
+}
+
+.content a {
+  display: block;
+  font-size: 16px;
+  color: #f9f9f9;
+  padding: 12px 20px;
+  background-image: linear-gradient(rgb(98, 107, 28) 0%, rgb(114, 148, 34) 45%, rgb(91, 136, 0) 100%);
+  cursor: pointer;
+}
+
+h1 {
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: rgb(34, 34, 34);
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+  font-size: 2.7rem;
+  margin-left: 5.5em;
+}
+
+.postcode {
+  background: rgb(255, 204, 153);
+  padding: 40px;
+  border-radius: 10px;
+  border: 2px solid orange;
+  margin: 0 0 0 20px;
+  width: 65%;
+  margin: 0 auto;
+  font-size: 16px;
+}
+.postcode .search-postcode input {
+  border: none;
+  background: #ffffff;
+  padding: 8px;
+  margin: 0px 0px 0px 16px;
+  width: 80%;
+}
+.postcode .search-postcode button {
+  margin: 0;
+  background-color: rgb(0, 140, 186);
+  padding: 8px 20px;
+  border: none;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+}
+.postcode .locate-me h5 {
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: right;
+  display: block;
+  line-height: 1;
+  margin-left: 6.5em;
+}
+.postcode .locate-me button {
+  margin-top: 10px;
+  background-color: rgb(0, 140, 186);
+  padding: 8px 20px;
+  border: none;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.search-postcode,
+.locate-me {
+  display: flex;
+  justify-content: space-between;
+}
+
+.booking {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 1em;
+}
+
+.booking-line h3 {
+  color: blue;
+  font-size: 26px;
+}
+.booking-line h3 span {
+  color: #0896ff;
+}
+.booking-line .search-booking .guests-btn {
+  background-color: #ffbb39;
+  border: 1.5px solid #ffe295;
+  margin-top: 4px;
+  color: #c9960c;
+  border-radius: 3px;
+  align-items: center;
+}
+.booking-line .search-booking .guests-btn:hover {
+  color: #000000;
+}
+.booking-line .search-booking .guests-btn img:hover {
+  background-color: #000;
+}
+.booking-line .everything .search-button {
+  background-color: #0896ff;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 14.4px;
+  padding: 5px 10px;
+  margin-top: 2px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.booking-line .everything .search-button:hover {
+  background-color: #17498e;
+}
+
+.booking-line,
+.everything {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  gap: 0.5em;
+}
+.booking-line .search-booking,
+.booking-line .everything,
+.everything .search-booking,
+.everything .everything {
+  background: #ffbb39;
+  padding: 4px;
+}
+.booking-line button img,
+.everything button img {
+  width: 17px;
+}
+
+.everything {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  gap: 4em;
+}
+
+.city-section .city {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.city-section .city .fourth {
+  background-color: #edf1f6;
+}
+.city-section .city .first-one img {
+  position: relative;
+}
+.city-section .city .first-one .background {
+  width: 200px;
+}
+.city-section .city .first-one .first-box {
+  position: absolute;
+  top: 452px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 0px;
+  margin: 5px 0 0 5px;
+  width: 7%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+.city-section .city .first-one .first-box h3 .flag {
+  width: 17px;
+}
+.city-section .city .first-one .first-box p {
+  display: flex;
+}
+.city-section .city .first-one .first-box p .arrow {
+  width: 17px;
+  opacity: 0;
+}
+.city-section .city .first-one .first-box p .arrow:hover {
+  opacity: 1;
+}
+.city-section .city .fourth {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.city-section .city .fourth ul li a {
+  color: #17498e;
+}
+.city-section .city .fourth ul .from {
+  color: #989898;
+}
+.city-section .city .fourth li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 4em;
+  padding: 4px 4px;
+  margin-right: 50px;
+}
+.city-section .city .fourth li:hover {
+  background-color: #f9f9f9;
+}
+.city-section .city .fourth li img {
+  width: 17px;
+}
+.city-section .city .fourth button {
+  display: block;
+  margin: 0 auto;
+  background: #0896ff;
+  color: #fff;
+  width: 100%;
+  max-width: 200px;
+  font-size: 18px;
+  border: 4px solid #fff;
+  border-radius: 3px;
+  text-align: center;
+  padding: 6px;
+}
+.city-section .city .fourth button:hover {
+  background: #17498e;
+}
+.city-section .city .fourth button img {
+  width: 17px;
+  display: inline-block;
+  gap: 0;
+}
+
+.popular-postcodes {
+  align-items: center;
+}
+.popular-postcodes p {
+  background-color: #edf1f6;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.use-postcode {
+  background-color: #edf1f6;
+  padding: 2px 10px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.use-postcode p {
+  text-align: center;
+  font-size: 14px;
+  font-family: sans-serif;
+  margin: 20px 6px;
+  color: #333333;
+}
+.use-postcode p span {
+  font-weight: bold;
+}
+.use-postcode .discover-topics {
+  background: #fff;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.use-postcode .discover-topics h3 {
+  background: #edf1f6;
+  width: 100%;
+  border: 1px solid #989898;
+  padding: 10px;
+}
+.use-postcode .discover-topics hr {
+  color: #edf1f6;
+  width: 100%;
+}
+.use-postcode .discover-topics li {
+  list-style: none;
+  display: flex;
+  gap: 30em;
+  margin-bottom: 25px;
+}
+.use-postcode .discover-topics li a {
+  font-size: 14px;
+  color: #3c4043;
+  cursor: pointer;
+}
+.use-postcode .discover-topics li a:hover {
+  text-decoration: underline;
+}
+.use-postcode .discover-topics img {
+  width: 17px;
+}
+
+.footer-section {
+  background-color: #333333;
+}
+.footer-section .footer-elements {
+  margin: 0 auto;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  font-family: sans-serif;
+  gap: 2em;
+  margin-top: 20px;
+}
+.footer-section .footer-elements li {
+  list-style: none;
+}
+.footer-section .footer-elements li a {
+  color: #fff;
+}
+.footer-section .footer-elements li a:hover {
+  text-decoration: underline;
+}
+.footer-section .footer-paragraph {
+  background-color: #fff;
+}
+.footer-section .footer-paragraph p {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  margin-bottom: 2em;
+  padding: 4px;
+}
+.footer-section .footer-paragraph p a {
+  color: #0896ff;
+}/*# sourceMappingURL=main.css.map */
